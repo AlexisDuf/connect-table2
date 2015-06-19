@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableConnect", "TableConnect\TableConnect.csproj", "{B3737F65-E166-4028-8C76-7CE412D2AE82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApplication1\WebApp.csproj", "{EA3AC53B-84CC-4B09-96E7-A404FB823FE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3737F65-E166-4028-8C76-7CE412D2AE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3737F65-E166-4028-8C76-7CE412D2AE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3737F65-E166-4028-8C76-7CE412D2AE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3737F65-E166-4028-8C76-7CE412D2AE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3AC53B-84CC-4B09-96E7-A404FB823FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3AC53B-84CC-4B09-96E7-A404FB823FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3AC53B-84CC-4B09-96E7-A404FB823FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3AC53B-84CC-4B09-96E7-A404FB823FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

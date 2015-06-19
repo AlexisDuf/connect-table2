@@ -1,0 +1,116 @@
+﻿@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|iconicfill|zocial|fontelico);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontelico */
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* iconicfill */
+[class*="iconicfill-"]:before {
+  font-family: 'IconicFill', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+html{
+   background: url("../Ressources/img/background.jpg") no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour Chrome et Safari */
+  -moz-background-size: cover; /* pour Firefox */
+  -o-background-size: cover; /* pour Opera */
+  background-size: cover; /* version standardisée */
+  overflow:hidden;
+}
+
+body {
+
+}
+
+#container-principal{
+    width:100%;
+    height:100%;
+}
+
+*{
+    font-family:"Helvetica";
+}
+
+/*
+** CALIBRATION
+*/
+
+#calibration-top-left{
+    position : absolute;
+    top : 80px;
+    left : 80px;
+    width : 80px;
+    height : 80px;
+    border-radius : 50%;
+    border : 3px solid #fff;
+}
+
+#calibration-top-right{
+    position : absolute;
+    top : 80px;
+    right : 80px;
+    width : 80px;
+    height : 80px;
+    border-radius : 50%;
+    border : 3px solid #fff;
+}
+
+#calibration-bottom-left{
+    position : absolute;
+    bottom : 80px;
+    left : 80px;
+    width : 80px;
+    height : 80px;
+    border-radius : 50%;
+    border : 3px solid #fff;
+}
+
+#calibration-bottom-right{
+    position : absolute;
+    bottom : 80px;
+    right : 80px;
+    width : 80px;
+    height :80px;
+    border-radius : 50%;
+    border : 3px solid #fff;
+}
+
+.calibration-item{
+    z-index : 10000;
+}
+
+#calibration-top-right{
+    display : none;
+}
+
+#calibration-bottom-left{
+    display : none;
+}
+
+#calibration-bottom-right{
+    display : none;
+}
+
+#audio{
+    position : absolute;
+    z-index : 20000;
+    top : 50px;
+    left : 50px;
+}

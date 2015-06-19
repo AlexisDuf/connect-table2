@@ -1,0 +1,222 @@
+﻿#gaming-center{
+    position : absolute;
+    top : 50px;
+    margin-left : 13%;
+    width : 80%;
+    height : 600px;
+    background-color : rgb(255,255,255);
+    display : none;
+    z-index : 10000;
+}
+
+#gaming-center h3{
+    text-align : center;
+    font-size : 25px;
+}
+
+.gaming-center-btn{
+    height : 40px;
+    width : 40px;
+}
+
+.gaming-center-btn:hover{
+    cursor : pointer;
+}
+
+.game{
+    z-index : 5000;
+}
+
+.gaming-center-app-icon{
+    position : relative;
+    display : inline-block;
+    margin-left : 30px;
+    width : 16.6%;
+}
+
+.gaming-center-app-icon img{
+    width : 100px;
+    height : 100px;
+}
+
+/*
+** TIC TAC TOE
+*/
+
+#tic-tac-toe{
+    position : absolute;
+    top : 50px;
+    margin-left : 13%;
+    width : 80%;
+    height : 600px;
+    background-color : rgb(255,255,255);
+    display : none;
+}
+
+
+.gaming-center-close-btn{
+    color : #000;
+    position : absolute;
+    right : 10px;
+    top : 10px;
+    font-size : 30px;
+}
+
+.gaming-center-close-btn:hover{
+    cursor : pointer;
+}
+
+#tic-tac-toe-previous-btn{
+    color : #000;
+    position : absolute;
+    left : 10px;
+    top : 10px;
+    font-size : 30px;
+}
+
+#tic-tac-toe-previous-btn:hover{
+    cursor : pointer;
+}
+
+.wrapper {
+  font-family: Arial, Helvetica, sans-serif; 
+  color: SlateGray;
+  border: 1px dashed transparent;
+  height: 700px;
+  width: auto;
+}
+
+.gameTitle {
+  position:relative;
+  border: 1px dotted transparent;
+  height: 60px;
+  width:400px;
+  font-size: 60px;
+  text-align: center;
+  margin: 30px auto 15px auto;
+}
+
+.message {
+  position:relative;
+  border: 1px dotted transparent;
+  height: 60px;
+  width:400px;
+  font-size: 22px;
+  text-align: center;
+  margin: 30px auto 5px auto;
+}
+
+.game-board {
+  position:relative;
+  height: 400px;
+  width:400px;
+  background-color: LightGray;
+  margin: 20px auto 0 auto;
+  border-radius: 5%;
+}
+
+.play-square {
+  position: absolute;
+  border: 1px dotted transparent;
+  height: 128px;
+  width: 126px;
+  font-size: 150px;
+  text-align: center;
+  line-height: .88em;
+  cursor: pointer;
+}
+
+.game-grid-line {
+  position: absolute;
+  background-color: DimGray;
+}
+
+.vert-line {
+  height: 390px;
+  width: 10px;
+}
+.horiz-line {
+  width: 390px;
+  height: 10px;
+}
+
+#left-vert {
+  top: 5px;
+  left:32%;
+}
+#right-vert {
+  top: 5px;
+  left:66%;
+}
+#top-horiz {
+  top: 32%;
+  left: 5px;
+}
+#bottom-horiz {
+  top: 66%;
+  left:5px;
+}
+
+#sqTopLeft {
+  left: 0;
+  top: 0;
+}
+#sqTopMiddle {
+  left: 34%;
+  top: 0;
+}
+#sqTopRight {
+  left: 68%;
+  top: 0;
+}
+#sqMiddleLeft {
+  left: 0;
+  top: 34%;
+}
+#sqMiddleMiddle {
+  left: 34%;
+  top: 34%;
+}
+#sqMiddleRight {
+  left: 68%;
+  top: 34%;
+}
+#sqBottomLeft {
+  left: 0;
+  top: 68%;
+}
+#sqBottomMiddle {
+  left: 34%;
+  top: 68%;
+}
+#sqBottomRight {
+  left: 68%;
+  top: 68%;
+}
+
+.resetButton {
+  position:relative;
+  height: 40px;
+  width:135px;
+  background-color:DarkGreen;
+  border: 1px solid DarkGray;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto 15px auto;
+  padding: 15px 0 0 0;
+  color: white;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.align-right {
+  text-align:right;
+}
+
+.align-left {
+  text-align:left;
+}

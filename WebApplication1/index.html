@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Connect Table</title>
+    <link href="CSS/main.css" rel="stylesheet" />
+    <link href="CSS/menu.css" rel="stylesheet" />
+    <link href="CSS/animation.css" rel="stylesheet" />
+    <link href="CSS/keyBoard.css" rel="stylesheet" />
+    <link href="CSS/domotic.css" rel="stylesheet" />
+    <link href="CSS/game.css" rel="stylesheet" />
+    <link href="CSS/youtube.css" rel="stylesheet" />
+    <link href="CSS/photoViewer.css" rel="stylesheet" />
+</head>
+<body>
+
+   <div id="calibration-container">
+        <div class="calibration-item" id="calibration-top-left">
+
+        </div>
+
+        <div class="calibration-item" id="calibration-top-right">
+
+        </div>
+
+        <div class="calibration-item" id="calibration-bottom-left">
+
+        </div>
+
+        <div class="calibration-item" id="calibration-bottom-right">
+
+        </div>
+    </div>
+
+
+
+    <div id="container-principal">
+
+        <div id="domotic-menu">
+            <div id="domotic-menu-btn">
+                <span class="iconicfill-arrow-right"></span>
+            </div>
+
+            <div class="domotic-menu-item" id="domotic-center-btn">
+                <span class="entypo-adjust"></span>
+                <p>Domotic Center</p>
+            </div>
+
+            <div class="domotic-menu-item off" id="voice-recognition-btn">
+                <span class="entypo-mic"></span>
+                <p>Voice recognition</p>
+            </div>
+
+            <div class="domotic-menu-item" id="gaming-center-btn-open">
+                <span class="fontelico-emo-thumbsup"></span>
+                <p>Gaming center</p>
+            </div>
+
+            <div class="domotic-menu-item" id="youtubeVideo-btn-open">
+                <span class="zocial-youtube"></span>
+                <p>Youtube player</p>
+            </div>
+
+            <audio id="audio-balise" controls="controls" autoplay="autoplay" src=""></audio>
+
+            <!--<div id="sound-menu">
+                <div class="domotic-menu-item sound-menu-item selected">
+                    <span class="entypo-mute"></span>
+                </div>
+
+                <div class="domotic-menu-item sound-menu-item">
+                    <span class="entypo-plus"></span>
+                </div>
+
+                <div class="domotic-menu-item sound-menu-item">
+                    <span class="entypo-minus"></span>
+                </div>
+            </div>-->
+        </div>
+
+        <div id="domotic-interface">
+            <div id="domotic-interface-closebtn">
+                <span class="entypo-cancel-circled"></span>
+            </div>
+            <h3>Domotic Center</h3>
+
+            <div class="domotic-interface-element">
+                <span class="entypo-lamp"></span>
+                <p>First Device</p>
+                <span class="entypo-light-down domotic-interface-element-btn off" id="domotic-device-1" data="0"></span>
+            </div>
+
+            <div class="domotic-interface-element">
+                <span class="entypo-lamp"></span>
+                <p>First Device</p>
+                <span class="entypo-light-down domotic-interface-element-btn off" id="domotic-device-2" data="1"></span>
+            </div>
+
+            <div class="domotic-interface-element">
+                <span class="entypo-lamp"></span>
+                <p>First Device</p>
+                <span class="entypo-light-down domotic-interface-element-btn off" id="domotic-device-3" data="2"></span>
+            </div>
+        </div>
+
+        <div class="menu-container" id="greenUser-menu">
+            <ul class="menu">
+                <li><span class="menu-center"></span></li>
+                <li><span class="menu-icon youtube-icon zocial-youtube" user-key="green"></span></li>
+                <li><span class="menu-icon music-icon fontawesome-music" user-key="green"></span></li>
+                <li><span class="menu-icon picture-icon fontawesome-camera" user-key="green"></span></li>
+                <li><span class="menu-icon principalMenu-icon entypo-menu" user-key="green"></span></li>
+            </ul>
+
+            <div class="menu-window">
+                <div class="menu-window-currentIcon">
+                    <span class="entypo-menu"></span>
+                </div>
+
+                <p class="menu-windows-title">Menu</p>
+
+                <div class="menu-windows-content">
+
+                    <!-- Menu content -->
+                    <div class="menu-windows-content-menu">
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="zocial-youtube"></span><span class="item-tittle">Youtube</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="iconicfill-movie"></span><span class="item-tittle">Videos</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="fontawesome-music"></span><span class="item-tittle">Musics</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="fontawesome-camera"></span><span class="item-tittle">Photos</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                    </div>
+
+                    <!-- End Menu content-->
+
+                    <!-- Youtube content-->
+                    <div class="menu-windows-content-youtube">
+
+                        <input type="text" name="youtube-search" placeholder="search..." />
+                        <span class="iconicfill-magnifying-glass youtube-search-button" data="green" ></span>
+
+                        <div class="youtube-result">
+                        </div>
+
+                    </div>
+                    <!-- End youtube content-->
+
+                    <!-- Photos content -->
+                    <div class="menu-windows-content-photos">
+
+                    </div>
+                    <!-- End photos content -->
+
+                    <!-- Music content -->
+                    <div class="menu-windows-content-musics">
+                    </div>
+                    <!-- End musique content -->
+
+                    
+                </div>
+            </div>
+
+            <div class="menu-keyboard" id="greenUser-keyboard">
+                <div class="key-wrapper">
+                    <ul class="row">
+                        <li class="key" data="a">a</li>
+                        <li class="key" data="z">z</li>
+                        <li class="key" data="e">e</li>
+                        <li class="key" data="r">r</li>
+                        <li class="key" data="t">t</li>
+                        <li class="key" data="y">y</li>
+                        <li class="key" data="u">u</li>
+                        <li class="key" data="i">i</li>
+                        <li class="key" data="o">o</li>
+                        <li class="key" data="p">p</li>
+                    </ul>
+
+                    <ul class="row">
+                        <li class="key" data="q">q</li>
+                        <li class="key" data="s">s</li>
+                        <li class="key" data="d">d</li>
+                        <li class="key" data="f">f</li>
+                        <li class="key" data="g">g</li>
+                        <li class="key" data="h">h</li>
+                        <li class="key" data="j">j</li>
+                        <li class="key" data="k">k</li>
+                        <li class="key" data="l">l</li>
+                        <li class="key" data="m">m</li>
+                    </ul>
+
+                    <ul class="row">
+                        <li class="key" data="w">w</li>
+                        <li class="key" data="x">x</li>
+                        <li class="key" data="c">c</li>
+                        <li class="key" data="v">v</li>
+                        <li class="key" data="b">b</li>
+                        <li class="key" data="n">n</li>
+                        <li class="key" data=",">,</li>
+                    </ul>
+
+                    <ul class="row">
+                        <li class="key k32" data=" "></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu-container" id="redUser-menu">
+            <ul class="menu">
+                <li><span class="menu-center"></span></li>
+                <li><span class="menu-icon youtube-icon zocial-youtube" user-key="red"></span></li>
+                <li><span class="menu-icon music-icon fontawesome-music" user-key="red"></span></li>
+                <li><span class="menu-icon picture-icon fontawesome-camera" user-key="red"></span></li>
+                <li><span class="menu-icon principalMenu-icon fontawesome-cogs" user-key="red"></span></li>
+            </ul>
+
+            <div class="menu-window">
+                <div class="menu-window-currentIcon">
+                    <span class="entypo-menu"></span>
+                </div>
+
+                <p class="menu-windows-title">Menu</p>
+
+                <div class="menu-windows-content">
+
+                    <!-- Menu content -->
+                    <div class="menu-windows-content-menu">
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="zocial-youtube"></span><span class="item-tittle">Youtube</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="iconicfill-movie"></span><span class="item-tittle">Videos</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="fontawesome-music"></span><span class="item-tittle">Musics</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                        <div class="menu-windows-content-menu-item">
+                            <p><span class="fontawesome-camera"></span><span class="item-tittle">Photos</span></p>
+                            <p>You can search a youtube's video, create playlist and see your videos in small or full screen<p>
+                        </div>
+
+                    </div>
+
+                    <!-- End Menu content-->
+                    <!-- Youtube content-->
+                    <div class="menu-windows-content-youtube">
+
+                        <input type="text" name="youtube-search" placeholder="search..." />
+                        <span class="iconicfill-magnifying-glass youtube-search-button" data="red"></span>
+
+                        <div class="youtube-result">
+                        </div>
+
+                    </div>
+                    <!-- End youtube content-->
+                    <!-- Photos content -->
+                    <div class="menu-windows-content-photos">
+                    </div>
+                    <!-- End photos content -->
+                    <!-- Music content -->
+                    <div class="menu-windows-content-musics">
+                    </div>
+                    <!-- End musique content -->
+
+
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div id="gaming-center">
+            <div class="entypo-cancel-circled gaming-center-btn gaming-center-close-btn" id="gaming-center-close-btn"></div>
+            <h3>Gaming center</h3>
+             <div class="gaming-center-app-icon" id="tic-tac-toe-btn-open">
+                <img src="Ressources/img/ticTac.png"  />
+             </div> 
+        </div>
+
+        <div id="tic-tac-toe" class="game">
+            <div class="entypo-cancel-circled gaming-center-btn gaming-center-close-btn" id="tic-tac-toe-close-btn"></div>
+            <div class="entypo-left gaming-center-btn" id="tic-tac-toe-previous-btn"></div>
+            <div class="wrapper">
+                <h1 class="gameTitle">Tic-tac-toe</h1>
+                <div class="game-board">
+
+                    <!--top row of squares-->
+                    <div class="play-square" id="sqTopLeft" onclick="sqPlayed(1)"></div>
+                    <div class="play-square" id="sqTopMiddle" onclick="sqPlayed(2)"></div>
+                    <div class="play-square" id="sqTopRight" onclick="sqPlayed(3)"></div>
+
+                    <!--middle row of squares-->
+                    <div class="play-square" id="sqMiddleLeft" onclick="sqPlayed(4)"></div>
+                    <div class="play-square" id="sqMiddleMiddle" onclick="sqPlayed(5)"></div>
+                    <div class="play-square" id="sqMiddleRight" onclick="sqPlayed(6)"></div>
+
+                    <!--bottom row of squares-->
+                    <div class="play-square" id="sqBottomLeft" onclick="sqPlayed(7)"></div>
+                    <div class="play-square" id="sqBottomMiddle" onclick="sqPlayed(8)"></div>
+                    <div class="play-square" id="sqBottomRight" onclick="sqPlayed(9)"></div>
+
+
+                    <!--game grid lines-->
+                    <div class="game-grid-line vert-line" id="left-vert"></div>
+                    <div class="game-grid-line vert-line" id="right-vert"></div>
+                    <div class="game-grid-line horiz-line" id="top-horiz"></div>
+                    <div class="game-grid-line horiz-line" id="bottom-horiz"></div>
+
+                </div>
+
+                <h2 class="message">player 1, make the first move!</h2>
+
+                <div class="resetButton hide">Play again?</div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="currentVideo">
+        
+    </div>
+
+    <div id="youtube-btn-container">
+        <div id="close-youtube-player-btn" class="youtube-btn">
+            <span class="entypo-cancel-circled"></span>
+            <p>Close player</p>
+        </div>
+
+        <div id="previous-youtube-player-btn" class="youtube-btn">
+            <span class="entypo-left"></span>
+            <p>Back to menu</p>
+        </div>
+    </div>
+
+    <div id="photo-viewer">
+        <div id="photo-viewer-close-btn" class="entypo-cancel-circled"></div>
+
+        <div id="next-currentPhoto" class="fontawesome-angle-right"></div>
+        <div id="previous-currentPhoto" class="fontawesome-angle-left"></div>
+        
+        <div id="photos-mini-container">
+            <div id="photos-mini">
+            </div>
+       </div>
+
+        <div id="current-photo">
+            <img src="Ressources/img/noUsb.jpg" alt="current photo" />
+            <p id="current-photo-title">Desert</p>
+        </div>
+    </div>
+
+</body>
+<script src="Scripts/jquery-2.1.1.min.js"></script>
+<script src="Scripts/jquery.signalR-2.0.3.min.js"></script>
+<script src="JS/Utils/Utils.js" type="text/javascript"></script>
+<script src="http://localhost:8080/signalr/hubs"></script>
+<script src="JS/Config/signalRConfig.js"></script>-->
+<script src="JS/Views/menu.js"></script>
+
+
+<!-- Events -->
+<script type="text/javascript" src="JS/Events/AbstractConnectTableEvent.js"></script>
+<script type="text/javascript" src="JS/Events/CreateViewEvent.js"></script>
+<script type="text/javascript" src="JS/Events/FullScreenChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/MenuStateChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/UserAddedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/UserPositionChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/UserRemovedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/UserStateChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/DomoticElementStateChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/VoiceRecognitionStatusChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/SearchYoutubeEvent.js"></script>
+<script type="text/javascript" src="JS/Events/CurrentYoutubeVideoChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/UsbFilesChangedEvent.js"></script>
+<script type="text/javascript" src="JS/Events/CurrentPhotoChangedEvent.js"></script>
+<!-- End Events -->
+<!-- Abstract Classes-->
+<script type="text/javascript" src="JS/Model/AbstractModel.js"></script>
+<script type="text/javascript" src="JS/Views/AbstractConnectTableView.js"></script>
+<!-- End Abstract Classes -->
+<!-- Model -->
+<script type="text/javascript" src="JS/Model/Table.js"></script>
+<script type="text/javascript" src="JS/Model/User.js"></script>
+<script type="text/javascript" src="JS/Model/DomoticCenter.js"></script>
+<script type="text/javascript" src="JS/Model/YoutubeVideo.js"></script>
+<!-- End Model -->
+<!-- Views -->
+<script type="text/javascript" src="JS/Views/menu.js"></script>
+<script type="text/javascript" src="JS/Views/MenuView.js"></script>
+<script type="text/javascript" src="JS/Views/DomoticView.js"></script>
+<script type="text/javascript" src="JS/Views/PhotoViewerView.js"></script>
+<!-- End Views -->
+
+
+<!-- Game -->
+<script type="text/javascript" src="JS/Game/TicTacToe.js"></script>
+<!-- End Game -->
+
+
+<!-- Libs -->
+<!-- End Libs-->
+
+<script type="text/javascript" src="JS/Launcher.js"></script>
+
+</html>
